@@ -1,0 +1,708 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+/* fbf2d5 */
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+footer {
+  width: 100%;
+  height: 120px;
+  padding: 20px 20px 10px 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.copy-night {
+  color: #c4c4c450;
+}
+
+.copy-day {
+  color: #a5a5a5;
+}
+
+.theme-day {
+  background-color: #fcf4d9;
+  transition: all 300ms ease;
+}
+
+.theme-night {
+  background-color: #282828;
+  transition: all 300ms ease;
+}
+
+/* =================================
+              Header
+   =================================*/
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background-color: transparent;
+  backdrop-filter: blur(5px);
+
+  z-index: 20;
+}
+
+.wrapper-header {
+  width: 100%;
+  height: 100%;
+  max-width: 800px;
+  margin: auto;
+  padding: 0 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-logo-header {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.name-header-night {
+  color: #fff;
+  font-size: 20px;
+  transition: all 300ms ease;
+  font-weight: 500;
+}
+
+.name-header-day {
+  color: #282828;
+  font-size: 20px;
+  transition: all 300ms ease;
+  font-weight: 500;
+}
+
+.container-menu-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+}
+
+.day {
+  color: #282828;
+  padding: 5px;
+  font-size: 30px;
+  border-radius: 5px;
+  outline: 1px solid rgb(246, 236, 169);
+  background-color: rgb(246, 236, 169);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
+
+.night {
+  color: #fff;
+  padding: 5px;
+  font-size: 30px;
+
+  border-radius: 5px;
+  outline: 1px solid #2a89cc;
+  background-color: #2a89cc;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
+
+.container-menu-night {
+  color: #fff;
+  padding: 5px;
+  font-size: 20px;
+  border-radius: 5px;
+  outline: 0.5px solid #ffffff50;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 300ms ease;
+  cursor: pointer;
+}
+
+.container-menu-day {
+  color: #282828;
+  padding: 5px;
+  font-size: 20px;
+  border-radius: 5px;
+  outline: 0.5px solid #28282850;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 300ms ease;
+  cursor: pointer;
+}
+
+/* =================================
+              nav
+   =================================*/
+
+.containerNav {
+  position: fixed;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 40;
+}
+
+.nav-night {
+  width: 100%;
+  height: 200px;
+  max-width: 800px;
+  background-color: #2f2e36;
+  padding: 20px;
+  border: 1px solid #3f3e48;
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 1px 15px 30px #00000020;
+}
+
+.nav-day {
+  width: 100%;
+  height: 200px;
+  max-width: 800px;
+  background-color: #e1dbc6;
+  padding: 20px;
+  border: 1px solid #e1dbc6;
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 1px 15px 30px #00000020;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.menuItem-night {
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.menuItem-day {
+  color: #282828;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.menuItem-night:hover {
+  text-decoration: underline 3px #2a89cc;
+}
+
+.menuItem-day:hover {
+  text-decoration: underline 3px #2a89cc;
+}
+
+/* =================================
+              Home
+   =================================*/
+
+.main {
+  width: 100%;
+  height: auto;
+}
+
+.wrapper-main {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: 480px;
+  margin: auto;
+  padding: 0 20px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.presentation-night {
+  margin-top: 80px;
+  text-align: center;
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #383838;
+  color: #fff;
+  transition: all 300ms ease-in-out;
+}
+
+.presentation-day {
+  margin-top: 80px;
+  text-align: center;
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #e1dbc6;
+  color: #282828;
+  transition: all 300ms ease-in-out;
+}
+
+.containerMe {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.containerName {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.titleName-night {
+  color: #fff;
+  /* transition: all 300ms ease; */
+  font-size: 30px;
+}
+
+.titleName-night:hover {
+  text-decoration: underline 3px #2a89cc;
+}
+
+.titleName-day {
+  color: #282828;
+  /* transition: all 300ms ease; */
+  font-size: 30px;
+}
+
+.titleName-day:hover {
+  text-decoration: underline 3px #2a89cc;
+}
+
+.parrafoName-night {
+  transition: all 300ms ease;
+  color: #fff;
+}
+
+.parrafoName-day {
+  transition: all 300ms ease;
+  color: #282828;
+}
+
+.linkdingBtnMain {
+  margin-top: 20px;
+  padding: 5px 40px;
+  background-color: #2a89cc;
+  outline: 1px solid #2a89cc;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.about-night {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 700;
+  text-decoration: underline #2a89cc 3px;
+  transition: all 300ms ease;
+  text-align: start;
+}
+
+.about-day {
+  color: #282828;
+  font-size: 25px;
+  font-weight: 700;
+  text-decoration: underline #2a89cc 3px;
+  transition: all 300ms ease;
+  text-align: start;
+}
+
+.parrafoAbout-night {
+  margin-top: 18px;
+  color: #fff;
+  line-height: 30px;
+  letter-spacing: 1px;
+  transition: all 300ms ease;
+  text-align: start;
+}
+
+.parrafoAbout-day {
+  margin-top: 18px;
+  color: #282828;
+  line-height: 30px;
+  letter-spacing: 1px;
+  transition: all 300ms ease;
+  text-align: start;
+}
+
+.btnProyects {
+  width: auto;
+  padding: 10px 40px 10px 40px;
+  background-color: #2a89cc;
+  outline: 1px solid #2a89cc;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 500;
+
+  transition: all 300ms ease-in-out;
+}
+
+.btnProyects:hover {
+  background-color: #1f6ca3;
+  outline: 1px solid #1f6ca3;
+}
+
+.containerBtnProject {
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.misRedes-night {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 700;
+  text-decoration: underline #2a89cc 3px;
+  transition: all 300ms ease;
+  text-align: start;
+}
+
+.misRedes-day {
+  color: #282828;
+  font-size: 25px;
+  font-weight: 700;
+  text-decoration: underline #2a89cc 3px;
+  transition: all 300ms ease;
+  text-align: start;
+}
+
+.ulRedes {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 20px;
+}
+
+.liRedes-night {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  cursor: pointer;
+
+  transition: all 300ms ease-in-out;
+}
+
+.liRedes-day {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+
+  color: #282828;
+  font-size: 18px;
+  font-weight: 400;
+  cursor: pointer;
+
+  transition: all 300ms ease-in-out;
+}
+
+.d-flex-email {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.iconCopy {
+  margin-left: 140px;
+}
+
+@media screen and (max-width: 992px) {
+  .iconCopy {
+    margin-left: 100px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .iconCopy {
+    margin-left: 40px;
+  }
+}
+
+.liRedes-night:hover {
+  color: #2a89cc;
+}
+
+.liRedes-day:hover {
+  color: #2a89cc;
+}
+
+.misHabilidades-night {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 700;
+  text-decoration: underline #2a89cc 3px;
+  transition: all 300ms ease;
+  text-align: start;
+}
+
+.misHabilidades-day {
+  color: #282828;
+  font-size: 25px;
+  font-weight: 700;
+  text-decoration: underline #2a89cc 3px;
+  transition: all 300ms ease;
+  text-align: start;
+}
+
+.containerHabilidadesIcon {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+@media screen and (max-width: 576px) {
+  .containerHabilidadesIcon {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+}
+
+.titleHabilidades-night {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.titleHabilidades-day {
+  color: #282828;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.ulHabilidades {
+  margin-top: 15px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.liHabilidades-night {
+  color: #c4c4c4;
+  margin-top: 5px;
+
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.liHabilidades-day {
+  color: #282828;
+  margin-top: 5px;
+
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* =================================
+            Projects Page
+   =================================*/
+
+.sectionProjects {
+  width: 100%;
+  height: auto;
+}
+
+.wrapper-projects {
+  width: 100%;
+  height: 100%;
+  max-width: 480px;
+  margin: auto;
+  padding: 0 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.titleProjects-night {
+  margin-top: 80px;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 700;
+  text-decoration: underline #2a89cc 3px;
+  transition: all 300ms ease;
+  text-align: start;
+}
+
+.titleProjects-day {
+  margin-top: 80px;
+  color: #282828;
+  font-size: 25px;
+  font-weight: 700;
+  text-decoration: underline #2a89cc 3px;
+  transition: all 300ms ease;
+  text-align: start;
+}
+
+.imgProjects {
+  border-radius: 10px;
+}
+
+.textProject-night {
+  text-align: center;
+  color: #fff;
+  font-weight: 500;
+}
+
+.textProject-day {
+  text-align: center;
+  color: #282828;
+  font-weight: 500;
+}
+
+.tec-night {
+  text-align: center;
+  color: #fff;
+}
+
+.tec-day {
+  text-align: center;
+  color: #282828;
+}
+
+.containerImgProjects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.containerBtn {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.btnGithub {
+  padding: 5px 40px;
+  background-color: #2a89cc;
+  outline: 1px solid #2a89cc;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 500;
+
+  transition: all 300ms ease-in-out;
+}
+
+.btnGithub:hover {
+  background-color: #1c5f8f;
+  outline: 1px solid #1c5f8f;
+}
+
+.btnDemo {
+  padding: 5px 40px;
+  background-color: #2a89cc;
+  outline: 1px solid #2a89cc;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 500;
+
+  transition: all 300ms ease-in-out;
+}
+
+.btnDemo:hover {
+  background-color: #1c5f8f;
+  outline: 1px solid #1c5f8f;
+}
+
+.containerCopy-night {
+  width: 100%;
+  height: auto;
+  padding: 20px 40px;
+
+  background-color: #2f2e36;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  box-shadow: 1px 15px 30px #00000020;
+}
+
+.containerCopy-day {
+  width: 100%;
+  height: auto;
+  padding: 20px 40px;
+
+  background-color: #a5a5a5;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  box-shadow: 1px 15px 30px #00000020;
+}
+
+.copyText-night {
+  color: #fff;
+  letter-spacing: 2px;
+}
+
+.copyText-day {
+  color: #282828;
+  letter-spacing: 2px;
+}
