@@ -26,7 +26,7 @@ const HeaderSection = () => {
         <div>
           <h1 className="text-2xl md:text-4xl font-bold flex items-center gap-3">
             Nik0.jsx 🌵{" "}
-            <Tooltip content="Verified">
+            <Tooltip content="Verificado">
               <Button isIconOnly variant="light">
                 <VerifiedIcon />
               </Button>
