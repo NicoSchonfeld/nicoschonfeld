@@ -32,9 +32,10 @@ const HeaderSection = () => {
               </Button>
             </Tooltip>
           </h1>
-          <h1 className="text-base text-gray-500">@NicoSchonfeld__</h1>
+
+          <h2 className="text-base text-gray-500">@NicoSchonfeld__</h2>
         </div>
-        <Tooltip content="Twitter">
+        <Tooltip content="Mi nuevo Twitter">
           <Button
             as={"a"}
             href="https://twitter.com/NicoSchonfeld__"

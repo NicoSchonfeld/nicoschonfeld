@@ -48,7 +48,8 @@ const FeedSection = ({ isLoaded }) => {
 
               <p>
                 {" "}
-                Si estás interesado en saber más de mí, puedes escribirme por{" "}
+                Si estás interesado en saber más de mí, puedes escribirme a mi
+                nuevo{" "}
                 <Link
                   href="https://twitter.com/NicoSchonfeld__"
                   target="_blank"
