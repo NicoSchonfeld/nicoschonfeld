@@ -56,7 +56,12 @@ const Footer = () => {
         </Link>
       </div>
 
-      <Button variant="ghost">
+      <Button
+        variant="ghost"
+        as={Link}
+        href="https://vercel.com/"
+        target="_blank"
+      >
         Deployed on{" "}
         <span className="flex items-center">
           <SiVercel />
