@@ -31,11 +31,7 @@ const NavbarComp = () => {
           className="font-bold text-inherit cursor-pointer"
           onClick={() => scrollUp()}
         >
-          {theme == "dark" ? (
-            <LogoNS color="white" />
-          ) : (
-            <LogoNS color="black" />
-          )}
+          <LogoNS color={theme == "dark" ? "white" : "black"} />
         </span>
       </NavbarBrand>
 

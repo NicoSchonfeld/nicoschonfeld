@@ -24,8 +24,8 @@ const HeaderSection = () => {
       </div>
       <div className="w-full h-auto flex items-center justify-between px-10 pt-16 ">
         <div>
-          <h1 className="text-2xl md:text-4xl font-bold flex items-center gap-3">
-            Nico Schönfeld 🌵{" "}
+          <h1 className="text-xl md:text-4xl font-bold flex items-center justify-start gap-0 md:gap-3">
+            Nico Schönfeld 🌵
             <Tooltip content="Verificado">
               <Button isIconOnly variant="light">
                 <VerifiedIcon />
@@ -33,7 +33,9 @@ const HeaderSection = () => {
             </Tooltip>
           </h1>
 
-          <h2 className="text-base text-gray-500">@NicoSchonfeld__</h2>
+          <h2 className="text-sm md:text-base text-gray-500">
+            @NicoSchonfeld__
+          </h2>
         </div>
         <Tooltip content="Mi nuevo Twitter">
           <Button
@@ -51,15 +53,15 @@ const HeaderSection = () => {
       <div className="w-full h-auto px-10 py-3 space-y-3 text-sm md:text-base">
         <p>Developing the future!</p>
         <p>
-          Software developer. Lover javascript. Content creator on tiktok. Ex
+          Frontend Developer. Lover javascript. Content creator on tiktok. Ex
           designer.
         </p>
       </div>
       <div className="w-full h-auto px-10 flex items-center gap-3 text-sm md:text-base">
-        <p className="text-sm text-gray-500 flex items-center gap-1">
+        <p className="text-[12px] md:text-sm text-gray-500 flex items-center gap-1">
           <LiaBirthdayCakeSolid className="text-base" /> 19 de Septiembre
         </p>
-        <p className="text-sm text-gray-500 flex items-center gap-1">
+        <p className="text-[12px] md:text-sm text-gray-500 flex items-center gap-1">
           <AiOutlineCalendar className="text-base" /> Se registró en octubre de
           2021
         </p>

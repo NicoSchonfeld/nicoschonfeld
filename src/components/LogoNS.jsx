@@ -1,6 +1,6 @@
 import React from "react";
 
-const LogoNS = ({ size, height, width, color, ...props }) => {
+const LogoNS = ({ size, height, width, color = "white", ...props }) => {
   return (
     <svg
       width={size || width || 24}
