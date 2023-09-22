@@ -1,3 +1,7 @@
+"use client";
+
+import React from "react";
+import { useTheme } from "next-themes";
 import {
   Navbar,
   NavbarBrand,
@@ -8,10 +12,12 @@ import {
   NavbarMenuItem,
   Button,
 } from "@nextui-org/react";
-import React from "react";
 import { ThemeSwitcher } from "./ThemeSwitcher";
+import LogoNS from "./LogoNS";
 
 const NavbarComp = () => {
+  const { theme, setTheme } = useTheme();
+
   const scrollUp = () => {
     window.scrollTo({
       top: 0,
@@ -21,12 +27,16 @@ const NavbarComp = () => {
   return (
     <Navbar maxWidth="2xl">
       <NavbarBrand>
-        <h3
+        <span
           className="font-bold text-inherit cursor-pointer"
           onClick={() => scrollUp()}
         >
-          NICO SCHÖNFELD
-        </h3>
+          {theme == "dark" ? (
+            <LogoNS color="white" />
+          ) : (
+            <LogoNS color="black" />
+          )}
+        </span>
       </NavbarBrand>
 
       <NavbarContent justify="end">
