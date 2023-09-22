@@ -50,92 +50,105 @@ const AboutMe = ({ isLoaded }) => {
 
   return (
     <section className="w-full h-auto">
-      <ScrollShadow
-        hideScrollBar
-        className="w-full h-screen space-y-5 py-10 px-10"
-      >
-        <Card className="w-full">
-          <CardBody className="space-y-5">
-            <UserComponent />
+      {!isLoaded ? (
+        <ScrollShadow
+          hideScrollBar
+          className="w-full h-screen space-y-5 py-10 px-10"
+        >
+          <Skeleton isLoaded={isLoaded} className="rounded-lg px-10 py-16" />
+          <Skeleton isLoaded={isLoaded} className="rounded-lg px-10 py-20" />
+          <Skeleton isLoaded={isLoaded} className="rounded-lg px-10 py-32" />
+          <Skeleton isLoaded={isLoaded} className="rounded-lg px-10 py-20" />
+          <Skeleton isLoaded={isLoaded} className="rounded-lg px-10 py-32" />
+        </ScrollShadow>
+      ) : (
+        <ScrollShadow
+          hideScrollBar
+          className="w-full h-screen space-y-5 py-10 px-10"
+        >
+          <Card className="w-full text-sm md:text-base">
+            <CardBody className="space-y-5">
+              <UserComponent />
 
-            <p>¡Holaa! 🙌🏻🙌🏻</p>
+              <p>¡Holaa! 🙌🏻🙌🏻</p>
 
-            <p>
-              Me llamo Nicolás Schönfeld Desarrollar Front-End. me encanta hacer
-              proyectos usando React o Next.js como mi libreria/framework
-              favorito.
-            </p>
+              <p>
+                Me llamo Nicolás Schönfeld Desarrollar Front-End. Me encanta
+                hacer proyectos usando React o Next.js como mi
+                libreria/framework favorito.
+              </p>
 
-            <p>
-              Tengo 22 años, resido en Córdoba Argentina. <br />
-              Soy creativo y me esfuerzo por innovar o mejorar lo existente.
-            </p>
-          </CardBody>
-        </Card>
+              <p>
+                Tengo 22 años, resido en Córdoba Argentina. <br />
+                Soy creativo y me esfuerzo por innovar o mejorar lo existente.
+              </p>
+            </CardBody>
+          </Card>
 
-        <Card className="w-full">
-          <CardBody className="space-y-5">
-            <UserComponent />
+          <Card className="w-full text-sm md:text-base">
+            <CardBody className="space-y-5">
+              <UserComponent />
 
-            <p>Soy un capo en esto:</p>
+              <p>Soy un capo en esto:</p>
 
-            <ul className="list-disc px-10">
-              {skills?.slice(0, viewMore ? 24 : 5).map((dato, index) => (
-                <li
-                  key={index}
-                  className="text-gray-500 hover:text-gray-400 transition-all"
+              <ul className="list-disc px-10">
+                {skills?.slice(0, viewMore ? 24 : 5).map((dato, index) => (
+                  <li
+                    key={index}
+                    className="text-gray-500 hover:text-gray-400 transition-all"
+                  >
+                    {dato?.title}
+                  </li>
+                ))}{" "}
+                <Link
+                  color="secondary"
+                  className="cursor-pointer py-2"
+                  onClick={toggleViewMore}
                 >
-                  {dato?.title}
-                </li>
-              ))}{" "}
-              <Link
-                color="secondary"
-                className="cursor-pointer py-2"
-                onClick={toggleViewMore}
-              >
-                {!viewMore ? " Ver más..." : " Ver menos."}
-              </Link>
-            </ul>
-          </CardBody>
-        </Card>
+                  {!viewMore ? " Ver más..." : " Ver menos."}
+                </Link>
+              </ul>
+            </CardBody>
+          </Card>
 
-        <Card className="w-full">
-          <CardBody className="space-y-5">
-            <UserComponent />
+          <Card className="w-full text-sm md:text-base">
+            <CardBody className="space-y-5">
+              <UserComponent />
 
-            <p>Les dejo mi GitHub, ahí subo todos mis proyectos.</p>
+              <p>Les dejo mi GitHub, ahí subo todos mis proyectos.</p>
 
-            <p>
-              GitHub:{" "}
+              <p>
+                GitHub:{" "}
+                <Link
+                  href="https://github.com/NicoSchonfeld"
+                  target="_blank"
+                  color="secondary"
+                >
+                  Nutrixya
+                </Link>
+              </p>
+
               <Link
                 href="https://github.com/NicoSchonfeld"
                 target="_blank"
-                color="secondary"
+                className="w-full overflow-hidden rounded-xl flex flex-col md:flex-row items-center gap-5 border border-black/20 dark:border-white/20 hover:scale-95 transition-all shadow-md"
               >
-                Nutrixya
+                <Image src={photoMe3} alt="banner" width={200} height={200} />
+                <div className="text-center md:text-start">
+                  <p className="text-gray-500">github.com</p>
+                  <p>NicoSchonfeld - Overview</p>
+                  <p className="text-gray-500">
+                    Front-End Developer || React.js || Next.js .
+                  </p>
+                  <p className="text-gray-500">
+                    NicoSchonfeld hs 24 repositories avalible. Follo...
+                  </p>
+                </div>
               </Link>
-            </p>
-
-            <Link
-              href="https://github.com/NicoSchonfeld"
-              target="_blank"
-              className="w-full overflow-hidden rounded-xl flex flex-col md:flex-row items-center gap-5 border border-black/20 dark:border-white/20 hover:scale-95 transition-all shadow-md"
-            >
-              <Image src={photoMe3} alt="banner" width={200} height={200} />
-              <div className="text-center md:text-start">
-                <p className="text-gray-500">github.com</p>
-                <p>NicoSchonfeld - Overview</p>
-                <p className="text-gray-500">
-                  Front-End Developer || React.js || Next.js .
-                </p>
-                <p className="text-gray-500">
-                  NicoSchonfeld hs 24 repositories avalible. Follo...
-                </p>
-              </div>
-            </Link>
-          </CardBody>
-        </Card>
-      </ScrollShadow>
+            </CardBody>
+          </Card>
+        </ScrollShadow>
+      )}
     </section>
   );
 };
