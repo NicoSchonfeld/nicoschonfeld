@@ -15,7 +15,7 @@ const UserComponent = () => {
           className="rounded-full"
         />
         <div>
-          <p className="font-bold">Nik0.jsx 🌵</p>
+          <p className="font-bold">Nico Schönfeld 🌵</p>
           <p className="text-sm text-gray-500">@NicoSchonfeld__</p>
         </div>
       </div>

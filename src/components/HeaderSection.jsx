@@ -25,7 +25,7 @@ const HeaderSection = () => {
       <div className="w-full h-auto flex items-center justify-between px-10 pt-16 ">
         <div>
           <h1 className="text-2xl md:text-4xl font-bold flex items-center gap-3">
-            Nik0.jsx 🌵{" "}
+            Nico Schönfeld 🌵{" "}
             <Tooltip content="Verificado">
               <Button isIconOnly variant="light">
                 <VerifiedIcon />
