@@ -53,8 +53,7 @@ const HeaderSection = () => {
       <div className="w-full h-auto px-10 py-3 space-y-3 text-sm md:text-base">
         <p>Developing the future!</p>
         <p>
-          Frontend Developer. Lover javascript. Content creator on tiktok. Ex
-          designer.
+          Frontend Developer. Lover javascript. Content creator. Ex designer.
         </p>
       </div>
       <div className="w-full h-auto px-10 flex items-center gap-3 text-sm md:text-base">
