@@ -61,8 +61,7 @@ const HeaderSection = () => {
           <LiaBirthdayCakeSolid className="text-base" /> 19 de Septiembre
         </p>
         <p className="text-[12px] md:text-sm text-gray-500 flex items-center gap-1">
-          <AiOutlineCalendar className="text-base" /> Se registró en octubre de
-          2021
+          <AiOutlineCalendar className="text-base" /> Se unió en mayo de 2022
         </p>
       </div>
     </>
