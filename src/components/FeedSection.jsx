@@ -101,6 +101,17 @@ const FeedSection = ({ isLoaded }) => {
               </p>
 
               <p>
+                Linkedin de Nutrixya:{" "}
+                <Link
+                  href="https://www.linkedin.com/company/nutrixya/"
+                  target="_blank"
+                  color="secondary"
+                >
+                  Nutrixya - Fertilización simple y eficiente.
+                </Link>
+              </p>
+
+              <p>
                 Deploy:{" "}
                 <Link
                   href="https://www.nutrixyaweb.com/login"
