@@ -15,6 +15,7 @@ import DrumpUIComp from "@/assets/proyects/DrumpUIComp.png";
 import NsFrontend from "@/assets/proyects/NsFrontend.png";
 import Nutrixya from "@/assets/proyects/Nutrixya.png";
 import DrumpFinance from "@/assets/proyects/DrumpFinance.png";
+import Portfolio from "@/assets/proyects/Portfolio.png";
 
 const FeedSection = ({ isLoaded }) => {
   return (
@@ -58,6 +59,33 @@ const FeedSection = ({ isLoaded }) => {
                 </Link>{" "}
                 o por mis otras redes sociales.
               </p>
+            </CardBody>
+          </Card>
+
+          <Card className="w-full text-sm md:text-base">
+            <CardBody className="space-y-5">
+              <UserComponent />
+
+              <p>Mi Portfolio.</p>
+
+              <p>
+                Deploy:{" "}
+                <Link
+                  href="https://nicoschonfeld.vercel.app"
+                  target="_blank"
+                  color="secondary"
+                >
+                  Nico Schönfeld
+                </Link>
+              </p>
+
+              <Image
+                src={Portfolio}
+                width={1080}
+                height={1080}
+                alt="Portfolio"
+                className="object-cover h-[200px] md:h-[400px] w-full rounded-md border border-gray-50/20"
+              />
             </CardBody>
           </Card>
 
