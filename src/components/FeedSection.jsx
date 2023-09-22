@@ -43,7 +43,7 @@ const FeedSection = ({ isLoaded }) => {
               <p>¡Bienvenidos!</p>
 
               <p>
-                Este es mi portafolio, aquí publico todo mi trabajo y de vez en
+                Este es mi portfolio, aquí publico todo mi trabajo y de vez en
                 cuando algún tutorial.
               </p>
 
