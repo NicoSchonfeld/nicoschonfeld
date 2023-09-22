@@ -89,7 +89,7 @@ const AboutMe = ({ isLoaded }) => {
             <CardBody className="space-y-5">
               <UserComponent />
 
-              <p>Soy un capo en esto:</p>
+              <p>Tecnologías y herramientas en las que soy bueno:</p>
 
               <ul className="list-disc px-10">
                 {skills?.slice(0, viewMore ? 24 : 5).map((dato, index) => (
