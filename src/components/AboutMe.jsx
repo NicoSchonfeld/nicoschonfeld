@@ -124,7 +124,7 @@ const AboutMe = ({ isLoaded }) => {
                   target="_blank"
                   color="secondary"
                 >
-                  Nutrixya
+                  GitHub/NicoSchonfeld
                 </Link>
               </p>
 
