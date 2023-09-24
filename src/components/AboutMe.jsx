@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import {
   Card,
   CardBody,
+  Divider,
   Link,
   ScrollShadow,
   Skeleton,
@@ -13,6 +14,7 @@ import { motion, AnimatePresence } from "framer-motion";
 
 import photoMe3 from "../assets/banners/photoMe3.png";
 import Image from "next/image";
+import ButtonLike from "./HeartComponentButton";
 
 const AboutMe = ({ isLoaded }) => {
   const [viewMore, setViewMore] = useState(false);
@@ -82,6 +84,8 @@ const AboutMe = ({ isLoaded }) => {
                 Tengo 22 años, resido en Córdoba Argentina. <br />
                 Soy creativo y me esfuerzo por innovar o mejorar lo existente.
               </p>
+
+              <ButtonLike />
             </CardBody>
           </Card>
 
@@ -108,6 +112,8 @@ const AboutMe = ({ isLoaded }) => {
                   {!viewMore ? " Ver más..." : " Ver menos."}
                 </Link>
               </ul>
+
+              <ButtonLike />
             </CardBody>
           </Card>
 
@@ -134,7 +140,7 @@ const AboutMe = ({ isLoaded }) => {
                 className="w-full overflow-hidden rounded-xl flex flex-col md:flex-row items-center gap-5 border border-black/20 dark:border-white/20 hover:scale-95 transition-all shadow-md"
               >
                 <Image src={photoMe3} alt="banner" width={200} height={200} />
-                <div className="text-center md:text-start">
+                <div className="text-center md:text-start text-sm md:text-base pb-10 px-10 md:pb-0 md:px-0">
                   <p className="text-gray-500">github.com</p>
                   <p>NicoSchonfeld - Overview</p>
                   <p className="text-gray-500">
@@ -145,6 +151,8 @@ const AboutMe = ({ isLoaded }) => {
                   </p>
                 </div>
               </Link>
+
+              <ButtonLike />
             </CardBody>
           </Card>
         </ScrollShadow>

@@ -16,6 +16,7 @@ import NsFrontend from "@/assets/proyects/NsFrontend.png";
 import Nutrixya from "@/assets/proyects/Nutrixya.png";
 import DrumpFinance from "@/assets/proyects/DrumpFinance.png";
 import Portfolio from "@/assets/proyects/Portfolio.png";
+import ButtonLike from "./HeartComponentButton";
 
 const FeedSection = ({ isLoaded }) => {
   return (
@@ -59,6 +60,8 @@ const FeedSection = ({ isLoaded }) => {
                 </Link>{" "}
                 o por mis otras redes sociales.
               </p>
+
+              <ButtonLike />
             </CardBody>
           </Card>
 
@@ -86,6 +89,8 @@ const FeedSection = ({ isLoaded }) => {
                 alt="Portfolio"
                 className="object-cover h-[200px] md:h-[400px] w-full rounded-md border border-gray-50/20"
               />
+
+              <ButtonLike />
             </CardBody>
           </Card>
 
@@ -129,6 +134,8 @@ const FeedSection = ({ isLoaded }) => {
                 alt="Nutrixya"
                 className="object-cover h-[200px] md:h-[400px] w-full rounded-md border border-gray-50/20"
               />
+
+              <ButtonLike />
             </CardBody>
           </Card>
 
@@ -147,6 +154,8 @@ const FeedSection = ({ isLoaded }) => {
                 alt="DrumpFinance"
                 className="object-cover h-[200px] md:h-[400px] w-full rounded-md border border-gray-50/20"
               />
+
+              <ButtonLike />
             </CardBody>
           </Card>
 
@@ -182,6 +191,8 @@ const FeedSection = ({ isLoaded }) => {
                 alt="DrumpUIComp"
                 className="object-cover h-[200px] md:h-[400px] w-full rounded-md border border-gray-50/20"
               />
+
+              <ButtonLike />
             </CardBody>
           </Card>
 
@@ -224,6 +235,8 @@ const FeedSection = ({ isLoaded }) => {
                 alt="ExcelToJSON"
                 className="object-cover h-[200px] md:h-[400px] w-full rounded-md border border-gray-50/20"
               />
+
+              <ButtonLike />
             </CardBody>
           </Card>
 
@@ -240,6 +253,8 @@ const FeedSection = ({ isLoaded }) => {
                 alt="DrumpUI"
                 className="object-cover h-[200px] md:h-[400px] w-full rounded-md border border-gray-50/20"
               />
+
+              <ButtonLike />
             </CardBody>
           </Card>
 
@@ -269,6 +284,8 @@ const FeedSection = ({ isLoaded }) => {
                 alt="NsFrontend"
                 className="object-cover h-[200px] md:h-[400px] w-full rounded-md border border-gray-50/20"
               />
+
+              <ButtonLike />
             </CardBody>
           </Card>
         </ScrollShadow>
