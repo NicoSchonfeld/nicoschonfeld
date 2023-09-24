@@ -11,6 +11,12 @@ const ButtonLike = () => {
     setState(!state);
   };
 
+  const styleDiv =
+    "relative w-8 h-8 flex items-center justify-center cursor-pointer";
+  const styleCircle = `w-full h-full bg-red-100 absolute top-0 left-0 rounded-full`;
+  const styleCircle2 = `w-full h-full bg-red-100/50 absolute top-0 left-0 rounded-full`;
+  const styleHeart = "text-red-400 text-2xl z-[1]";
+
   return (
     <div className="w-full flex items-center justify-end px-5">
       <div className={styleDiv} onClick={toggle}>
