@@ -13,24 +13,49 @@ const ButtonLike = () => {
 
   return (
     <div className="w-full flex items-center justify-end px-5">
-      <button
-        className="relative w-7 h-7 flex items-center justify-center"
-        onClick={toggle}
-      >
+      <div className={styleDiv} onClick={toggle}>
         <motion.div
           initial={{ opacity: 0, scale: 0 }}
           animate={state ? { opacity: 1, scale: 1 } : { opacity: 1, scale: 0 }}
-          className="w-full h-full bg-red-100 absolute top-0 left-0 rounded-full"
+          transition={{
+            duration: 0.3,
+            ease: [0, 0.71, 0.2, 1.01],
+            scale: {
+              type: "spring",
+              damping: 5,
+              stiffness: 100,
+              restDelta: 0.001,
+            },
+            delay: 0.1,
+          }}
+          className={styleCircle}
         ></motion.div>
 
+        <motion.div
+          initial={{ opacity: 0, scale: 0 }}
+          animate={
+            state ? { opacity: 1, scale: 1.2 } : { opacity: 1, scale: 0 }
+          }
+          transition={{
+            duration: 0.3,
+            ease: [0, 0.71, 0.2, 1.01],
+            scale: {
+              type: "spring",
+              damping: 5,
+              stiffness: 100,
+              restDelta: 0.001,
+            },
+          }}
+          className={styleCircle2}
+        ></motion.div>
         <motion.span
           whileHover={{ scale: 0.9 }}
           whileTap={{ scale: 1.2 }}
-          className="text-red-400 text-xl z-[1]"
+          className={styleHeart}
         >
           {state ? <AiFillHeart /> : <AiOutlineHeart />}
         </motion.span>
-      </button>
+      </div>
     </div>
   );
 };
