@@ -14,6 +14,7 @@ import {
 } from "@nextui-org/react";
 import { ThemeSwitcher } from "./ThemeSwitcher";
 import LogoNS from "./LogoNS";
+import NextLink from "next/link";
 
 const NavbarComp = () => {
   const { theme, setTheme } = useTheme();
@@ -27,12 +28,13 @@ const NavbarComp = () => {
   return (
     <Navbar maxWidth="2xl">
       <NavbarBrand>
-        <span
+        <NextLink
+          href="/"
           className="font-bold text-inherit cursor-pointer"
-          onClick={() => scrollUp()}
+          onClick={scrollUp}
         >
           <LogoNS color={theme == "dark" ? "white" : "black"} />
-        </span>
+        </NextLink>
       </NavbarBrand>
 
       <NavbarContent justify="end">

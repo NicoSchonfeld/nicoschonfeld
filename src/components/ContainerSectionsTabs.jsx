@@ -5,6 +5,7 @@ import { Skeleton, Tab, Tabs } from "@nextui-org/react";
 import FeedSection from "./FeedSection";
 import AboutMe from "./AboutMe";
 import Footer from "./Footer";
+import BlogSection from "./BlogSection";
 
 const ContainerSectionsTabs = () => {
   const [isLoaded, setIsLoaded] = React.useState(false);
@@ -32,15 +33,9 @@ const ContainerSectionsTabs = () => {
           <AboutMe isLoaded={isLoaded} />
         </Tab>
 
-        <Tab key="blog" title="Blog">
-          <div className="h-screen space-y-5 px-10">
-            <p className="text-2xl font-bold">Próximamente...</p>
-
-            <Skeleton className="rounded-lg px-10 py-16" />
-            <Skeleton className="rounded-lg px-10 py-28" />
-            <Skeleton className="rounded-lg px-10 py-16" />
-          </div>
-        </Tab>
+        {/* <Tab key="blog" title="Blog">
+          <BlogSection isLoaded={isLoaded} />
+        </Tab> */}
       </Tabs>
 
       <Footer />

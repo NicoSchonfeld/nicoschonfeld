@@ -3,7 +3,7 @@
 import Image from "next/image";
 import banner2 from "../assets/banners/banner2.png";
 import photoMe3 from "../assets/banners/photoMe3.png";
-import { Button, Tooltip } from "@nextui-org/react";
+import { Button, Tooltip, Link } from "@nextui-org/react";
 import { LiaBirthdayCakeSolid } from "react-icons/lia";
 import { AiOutlineCalendar } from "react-icons/ai";
 import VerifiedIcon from "./VerifiedIcon";
@@ -53,7 +53,30 @@ const HeaderSection = () => {
       <div className="w-full h-auto px-10 py-3 space-y-3 text-sm md:text-base">
         <p>Developing the future!</p>
         <p>
-          Frontend Developer. Lover javascript. Content creator. Ex designer.
+          <Link
+            href="https://twitter.com/search?q=%23FrontEnd&src=typeahead_clickhttps://drive.google.com/file/d/15kmPfuJ59yFkSqwMpr0WKOwLiR6xXrQz/view?usp=sharing"
+            target="_blank"
+            color="primary"
+          >
+            #Frontend
+          </Link>{" "}
+          Developer. Lover{" "}
+          <Link
+            href="https://twitter.com/search?q=%23javascript&src=typeahead_click&f=top"
+            target="_blank"
+            color="primary"
+          >
+            #javascript
+          </Link>
+          . Content creator. Ex designer.{" "}
+          <Link
+            href="https://drive.google.com/file/d/15kmPfuJ59yFkSqwMpr0WKOwLiR6xXrQz/view?usp=sharing"
+            target="_blank"
+            color="primary"
+          >
+            CV
+          </Link>
+          .
         </p>
       </div>
       <div className="w-full h-auto px-10 flex items-center gap-3 text-sm md:text-base">
