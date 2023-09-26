@@ -37,7 +37,16 @@ const Footer = () => {
   return (
     <>
       <footer className="w-full py-10 h-auto flex flex-col items-center justify-center gap-5">
-        <div className="space-x-5">
+        <div className="space-x-5 flex items-center">
+          <Link
+            href="https://drive.google.com/file/d/1q-Lxy7w_11_Nz4nOldZISjRfjeGhuvnr/view?usp=sharing"
+            target="_blank"
+            color="success"
+            className="text-sm p-1 hover:scale-90 transition-all border rounded-full"
+          >
+            CV
+          </Link>
+
           <Link
             href="https://www.linkedin.com/in/nicoschonfeld/"
             target="_blank"
