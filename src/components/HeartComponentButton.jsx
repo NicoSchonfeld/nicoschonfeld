@@ -5,7 +5,7 @@ import { useTheme } from "next-themes";
 import { AiFillHeart, AiOutlineHeart } from "react-icons/ai";
 import { motion } from "framer-motion";
 
-const ButtonLike = () => {
+const ButtonLike = ({ justify = "end", text = "2xl", w = "8", h = "8" }) => {
   const [state, setState] = React.useState(false);
   const { theme, setTheme } = useTheme();
 
@@ -13,14 +13,14 @@ const ButtonLike = () => {
     setState(!state);
   };
 
-  const styleDiv =
-    "relative w-8 h-8 flex items-center justify-center cursor-pointer";
+  const styleContainer = `w-full flex items-center justify-${justify} px-5 ${theme}`;
+  const styleDiv = `relative w-${w} h-${h} flex items-center justify-center cursor-pointer`;
   const styleCircle = `w-full h-full bg-red-100 dark:bg-red-600/30 absolute top-0 left-0 rounded-full`;
   const styleCircle2 = `w-full h-full bg-red-100/50 dark:bg-red-600/20 absolute top-0 left-0 rounded-full`;
-  const styleHeart = "text-red-400 text-2xl z-[1]";
+  const styleHeart = `text-red-400 text-${text} z-[1]`;
 
   return (
-    <div className={`w-full flex items-center justify-end px-5 ${theme}`}>
+    <div className={styleContainer}>
       <div className={styleDiv} onClick={toggle}>
         <motion.div
           initial={{ opacity: 0, scale: 0 }}

@@ -19,6 +19,20 @@ import Portfolio from "@/assets/proyects/Portfolio.png";
 import ButtonLike from "./HeartComponentButton";
 
 const FeedSection = ({ isLoaded }) => {
+  const scrollUp = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
+  const scrollDown = () => {
+    window.scrollTo({
+      top: 999,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <section className="w-full h-auto">
       {!isLoaded ? (
@@ -55,10 +69,19 @@ const FeedSection = ({ isLoaded }) => {
                 <Link
                   href="https://twitter.com/NicoSchonfeld__"
                   target="_blank"
+                  color="secondary"
+                  className="underline"
                 >
                   Twitter
                 </Link>{" "}
-                o por mis otras redes sociales.
+                o por mis otras{" "}
+                <span
+                  className="text-purple-500 hover:text-purple-600 underline cursor-pointer transition-all"
+                  onClick={() => scrollDown()}
+                >
+                  redes sociales
+                </span>
+                .
               </p>
 
               <ButtonLike />

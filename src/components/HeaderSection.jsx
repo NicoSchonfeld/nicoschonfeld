@@ -56,7 +56,7 @@ const HeaderSection = () => {
           <Link
             href="https://twitter.com/search?q=%23FrontEnd&src=typeahead_clickhttps://drive.google.com/file/d/15kmPfuJ59yFkSqwMpr0WKOwLiR6xXrQz/view?usp=sharing"
             target="_blank"
-            color="primary"
+            color="secondary"
           >
             #Frontend
           </Link>{" "}
@@ -64,7 +64,7 @@ const HeaderSection = () => {
           <Link
             href="https://twitter.com/search?q=%23javascript&src=typeahead_click&f=top"
             target="_blank"
-            color="primary"
+            color="secondary"
           >
             #javascript
           </Link>
@@ -72,7 +72,7 @@ const HeaderSection = () => {
           <Link
             href="https://drive.google.com/file/d/15kmPfuJ59yFkSqwMpr0WKOwLiR6xXrQz/view?usp=sharing"
             target="_blank"
-            color="primary"
+            color="secondary"
           >
             CV
           </Link>

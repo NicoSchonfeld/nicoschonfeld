@@ -21,10 +21,11 @@ const NavbarComp = () => {
 
   const scrollUp = () => {
     window.scrollTo({
-      top: 0,
+      top: 999,
       behavior: "smooth",
     });
   };
+
   return (
     <Navbar maxWidth="2xl">
       <NavbarBrand>
@@ -33,7 +34,7 @@ const NavbarComp = () => {
           className="font-bold text-inherit cursor-pointer"
           onClick={scrollUp}
         >
-          <LogoNS color={theme == "dark" ? "white" : "black"} />
+          <LogoNS color={theme === "dark" ? "white" : "black"} />
         </NextLink>
       </NavbarBrand>
 
